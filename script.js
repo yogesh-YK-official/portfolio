@@ -21,5 +21,5 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+document.querySelectorAll('.reveal, .reveal-right').forEach((element) => observer.observe(element));
 document.getElementById('year').textContent = new Date().getFullYear();
